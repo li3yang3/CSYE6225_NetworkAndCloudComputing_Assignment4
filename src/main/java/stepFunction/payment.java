@@ -30,7 +30,7 @@ public class payment implements RequestHandler<Object, Object> {
 	        Course course = mapper.load(Course.class, courseId);
 	        
 	        if(course.getStudentIds().contains(studentId)) {
-	        		input = "Student Already Register This Course!";
+	        		input = "Student Already Registered!";
 	        }
 	        
 	        return input;
